@@ -8,4 +8,4 @@ A aplicação permite cadastrar tarefas, deletá-las ou marcar como finalizadas.
 
 # Layout da aplicação
 
-image.png
+![image](https://user-images.githubusercontent.com/42443254/201949782-147be36f-ad19-4996-ba12-8879534c8890.png)
