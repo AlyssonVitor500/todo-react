@@ -24,6 +24,7 @@
     font-size: .875rem;
     line-height: line-height;
     transition: .2s;
+    cursor: pointer;
 }
 
 .taskTextWithLine {

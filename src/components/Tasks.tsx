@@ -22,7 +22,10 @@ export function Tasks({id, taskText, isTaskChecked, onPressTrashButton, onChange
                 <Check />
             </div>
 
-            <span className={isTaskChecked ? style.taskTextWithLine : style.taskText}>
+            <span 
+                className={isTaskChecked ? style.taskTextWithLine : style.taskText}
+                onClick={() => onChangeTaskCheck(id)} 
+            >
                 { taskText }
             </span>
 
