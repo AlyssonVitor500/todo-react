@@ -1,0 +1,23 @@
+.emptyContainer {
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+    
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--gray-300);
+
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+
+    width: 100%;
+}
+
+.emptyContainer span:nth-child(2){
+    margin-top: 1rem;
+    font-weight: bold;
+}

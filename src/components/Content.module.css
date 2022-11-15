@@ -1,0 +1,97 @@
+.containerMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    padding: 0 16px;
+
+    width: 760px;
+}
+
+.inputGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    margin-top: calc(0px - (3.375rem / 2));
+    width: 100%;
+}
+
+.inputGroup button{
+    background-color: var(--blue-700);
+    color: var(--gray-100);
+    border: transparent;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 3.375rem;
+    transition: background-color .2s;
+
+    font-weight: bold;
+}
+
+.inputGroup button:not(:disabled):hover{
+    background-color: var(--blue-500);
+}
+
+.inputGroup button:disabled {
+    opacity: 80%;
+    cursor: not-allowed;
+}
+
+.inputGroup input[type="text"]{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--gray-500);
+    color: var(--gray-300);
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    transition: border-color .2s;
+    height: 3.375rem;
+}
+
+.inputGroup input[type="text"]:hover, .inputGroup input[type="text"]:focus{
+    border-color: var(--purple-700);
+}
+
+.contentHeaderMain {
+    margin-top: 4rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentHeaderMain * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 0;
+}
+
+.contentHeaderMain .createdTasks {
+    color: var(--blue-500);
+}
+
+.contentHeaderMain .finishedTasks {
+    color: var(--purple-500);
+}
+
+.tasksContainer {
+    margin-top: 1.5rem;
+
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .containerMain {
+        width: 100%;
+    } 
+}
